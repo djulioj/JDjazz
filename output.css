@@ -1826,6 +1826,10 @@ video {
     margin-left: 2.5rem;
   }
 
+  .xl\:h-\[100vh\] {
+    height: 100vh;
+  }
+
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
