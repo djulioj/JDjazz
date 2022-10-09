@@ -22,8 +22,7 @@
             <h3 class="text-3xl font-bold mb-8">Music time!</h3>
             <label for="inputTag" class="inline-block  px-6 py-2.5 cursor-pointer border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"data-mdb-ripple="true" data-mdb-ripple-color="light" id="addButton">
               Add song
-              <input type="file" id="inputTag" multiple accept="audio/*" class="inline-block px-6 py-2.5 hidden border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-              data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <input type="file" id="inputTag" multiple accept="audio/*" class="inline-block px-6 py-2.5 hidden border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light"/>
             </label>
           </div>
         </div>
@@ -34,10 +33,10 @@
     <!-- here header finish -->
 
     <div id="songs" class="hidden sm:bg-repeat lg:h-[100vh] xl:h-[100vh] relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;background-repeat: repeat;background-image: url(./img/SplitShire-8098-1800x1200.jpg);">
-      <!-- <hr class="mt-12">
+      <hr class="mt-12 hidden" id="line">
       
 
-      <div class="flex items-center justify-center">
+      <div class="hidden flex items-center justify-center" id="play">
         <div class="inline-flex hover:shadow-lg focus:shadow-lg">
           <button type="button" class=" rounded inline-block px-6 py-2.5 leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out mt-4">
             <img src="./img/boton-de-play.png" alt="">
@@ -47,10 +46,10 @@
 
 
     
-      <div class="mx-auto flex justify-center max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <!-- <div class="mx-auto flex justify-center max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
 
-          <div class="group cursor-pointer w-fit lg:ml-10 mr-10">
+          <div class="group cursor-pointer w-fit lg:ml-10 lg:mr-10">
             <div class="aspect-w-1 aspect-h-1 w-48 overflow-hidden rounded-full xl:aspect-w-7 xl:aspect-h-8">
               <img src="./img/1366_2000.jpg " class="bg-white h-full w-full object-cover object-center group-hover:opacity-75">
             </div>
@@ -118,7 +117,7 @@
           <button type="button" class=" rounded-l inline-block px-6 py-2.5 leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out mb-10">
             <img src="./img/previous.png" alt="">
           </button>
-          <h2 class="text-white justify-center text-center flex items-center mb-10">Página 1</h2>
+          <h2 class="text-white justify-center text-center flex items-center mb-10">1 of --</h2>
           <button type="button" class=" rounded-r inline-block px-6 py-2.5 leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out mb-10">
             <img src="./img/next.png" alt="">
           </button>
