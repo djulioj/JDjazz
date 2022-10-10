@@ -1,10 +1,8 @@
 function activateMusicSpace(){
   const reproductor=document.getElementById("reproductor");
   const Songs=document.getElementById("songs");
-  const hr=document.getElementById("line");
 
   reproductor.classList.remove("hidden");
-  hr.classList.remove("hidden"); 
 
   Songs.addEventListener("click",(e)=>{
     console.log(e.target.classList);
