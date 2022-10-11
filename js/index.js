@@ -1,6 +1,6 @@
 function playMusic(index){
     const playImg=document.getElementById("playimg");
-    playImg.src="../img/pause.png";
+    playImg.src="./img/pausa.png";
     url=canciones[index].url;
     audio.src=url;
     audio.play();
@@ -46,11 +46,11 @@ function buttons(){
                 playingSong=0;
             }
             audio.play();
-            playImg.src="../img/pause.png";
+            playImg.src="./img/pausa.png";
             playing=true;
         }else{
             audio.pause();
-            playImg.src="../img/boton-de-play.png";
+            playImg.src="./img/boton-de-play.png";
             playing=false;
         }
     });
@@ -141,7 +141,12 @@ function load(){
             </div>`;
           listHTML.innerHTML+=song;        
         }
-        totalPages=~~(canciones.length/8)+1;
+        if(canciones.length%8 === 0){
+            totalPages=~~(canciones.length/8);
+        }else{
+            totalPages=~~(canciones.length/8)+1;
+        }
+        
         btnWithList();
     }else{
         btnNoList();
